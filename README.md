@@ -44,6 +44,7 @@ mpc volume 80
 ```sh
 docker build -t xbf321/mpd-player-py .
 
-docker run -it --rm -e MPD_HOST=192.168.100.1 -e MPD_PORT=7160 -p 7170:7170 mpd-player-py /bin/bash
+docker push xbf321/mpd-player-py:latest
 
+docker run -it --rm -e MPD_HOST=192.168.100.1 -e MPD_PORT=7160 -p 7170:7170 mpd-player-py /bin/bash
 ```
